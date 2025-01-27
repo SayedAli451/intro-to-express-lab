@@ -58,6 +58,6 @@ app.get('/shose', (req, res) => {
         filteredShose = filteredShose.filter(sho => sho.price <= maxPrice);
     }
 
-    res.json(filteredShose);
+    res.send(filteredShose);
 });
 
